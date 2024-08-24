@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lista de dados</title>
+    </head>
+
+    <body>
+        <h1>Lista de Pessoas</h1>
+        <table border="1">
+            <tr>
+                <th>ID</th>
+                <th>Primeiro Nome</th>
+                <th>Último Nome</th>
+                <th>Cidade</th>
+                <th>Estado</th>
+                <th>Idade</th>
+            </tr>
+            {% for dado in dados %}
+            <tr>
+                <td>{{ dado.PessoaID }}</td>
+                <td>{{ dado.PrimeiroNome }}</td>
+                <td>{{ dado.UltimoNome }}</td>
+                <td>{{ dado.Cidade }}</td>
+                <td>{{ dado.Estado }}</td>
+                <td>{{ dado.Idade }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
